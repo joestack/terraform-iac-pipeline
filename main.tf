@@ -34,7 +34,7 @@ resource "github_repository" "example" {
 resource "tfe_workspace" "example" {
   name         = var.gh_vcs_repo
   organization = var.tfc_org
-  #project_id   = "prj-j8NKBoEPUgpdxPws"
+  project_id   = "prj-RCk4632hYKKqVvyj"
   tag_names    = []
   vcs_repo {
     identifier = github_repository.example.full_name

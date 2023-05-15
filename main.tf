@@ -43,6 +43,6 @@ resource "tfe_workspace" "example" {
   allow_destroy_plan = true
   auto_apply = true
   global_remote_state = true 
-  queue_all_runs = true  
+  queue_all_runs = false  
   terraform_version = "1.4.6" 
 }
